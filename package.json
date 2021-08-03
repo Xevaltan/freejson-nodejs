@@ -1,6 +1,6 @@
 {
   "name": "@xevaltan/freejson",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "new nodejs filesystem",
   "main": "index.js",
   "scripts": {

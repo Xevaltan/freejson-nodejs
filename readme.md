@@ -9,7 +9,7 @@ npm i --save @xevaltan/freejson
 ### Import
 
 ```js
-const ezyjson = require("@xevaltan/ezyjson");
+const freejson = require("@xevaltan/freejson");
 ```
 
 ### Testing
@@ -17,7 +17,7 @@ const ezyjson = require("@xevaltan/ezyjson");
 #### Example 1
 
 ```js
-const ezyjson = require("@xevaltan/ezyjson");
+const freejson = require("@xevaltan/freejson");
 const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // add a key with the value.
@@ -31,7 +31,7 @@ myJsonDatabase.save();
 #### Example 2
 
 ```js
-const ezyjson = require("@xevaltan/ezyjson");
+const ezyjson = require("@xevaltan/freejson");
 const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // add a key with the value.
@@ -45,7 +45,7 @@ myJsonDatabase.save();
 #### Example 3
 
 ```js
-const ezyjson = require("@xevaltan/ezyjson");
+const ezyjson = require("@xevaltan/freejson");
 const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // add a key with the value.
@@ -64,7 +64,7 @@ myJsonDatabase.save();
 #### Example 4
 
 ```js
-const ezyjson = require("@xevaltan/ezyjson");
+const ezyjson = require("@xevaltan/freejson");
 const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // add a key with the value.
@@ -78,7 +78,7 @@ myJsonDatabase.save();
 #### Example 5
 
 ```js
-const ezyjson = require("@xevaltan/ezyjson");
+const ezyjson = require("@xevaltan/freejson");
 const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // get value of a key
@@ -89,7 +89,7 @@ console.log(`This user has ${myJsonDatabase()["userID"].coins} coins.`);
 #### Example 6
 
 ```js
-const ezyjson = require("@xevaltan/ezyjson");
+const ezyjson = require("@xevaltan/freejson");
 const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // get value of a key
@@ -100,7 +100,7 @@ console.log(`Debug : ${myJsonDatabase().key}`);
 #### Example 7
 
 ```js
-const ezyjson = require("@xevaltan/ezyjson");
+const ezyjson = require("@xevaltan/freejson");
 const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // get value of a key
