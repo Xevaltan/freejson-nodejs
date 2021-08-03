@@ -1,4 +1,4 @@
-# EZYJSON - NEW NODEJS FILESYSTEM
+# FREEJSON - NEW NODEJS FILESYSTEM
 
 ### Install
 
@@ -9,7 +9,7 @@ npm i --save @xevaltan/freejson
 ### Import
 
 ```js
-const ezyjson = require("ezyjson");
+const ezyjson = require("@xevaltan/ezyjson");
 ```
 
 ### Testing
@@ -17,8 +17,8 @@ const ezyjson = require("ezyjson");
 #### Example 1
 
 ```js
-const ezyjson = require("ezyjson");
-const myJsonDatabase = ezyjson(`${__dirname}/myDatabase.json`);
+const ezyjson = require("@xevaltan/ezyjson");
+const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // add a key with the value.
 
@@ -31,8 +31,8 @@ myJsonDatabase.save();
 #### Example 2
 
 ```js
-const ezyjson = require("ezyjson");
-const myJsonDatabase = ezyjson(`${__dirname}/myDatabase.json`);
+const ezyjson = require("@xevaltan/ezyjson");
+const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // add a key with the value.
 
@@ -45,8 +45,8 @@ myJsonDatabase.save();
 #### Example 3
 
 ```js
-const ezyjson = require("ezyjson");
-const myJsonDatabase = ezyjson(`${__dirname}/myDatabase.json`);
+const ezyjson = require("@xevaltan/ezyjson");
+const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // add a key with the value.
 
@@ -64,8 +64,8 @@ myJsonDatabase.save();
 #### Example 4
 
 ```js
-const ezyjson = require("ezyjson");
-const myJsonDatabase = ezyjson(`${__dirname}/myDatabase.json`);
+const ezyjson = require("@xevaltan/ezyjson");
+const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // add a key with the value.
 
@@ -78,8 +78,8 @@ myJsonDatabase.save();
 #### Example 5
 
 ```js
-const ezyjson = require("ezyjson");
-const myJsonDatabase = ezyjson(`${__dirname}/myDatabase.json`);
+const ezyjson = require("@xevaltan/ezyjson");
+const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // get value of a key
 
@@ -89,8 +89,8 @@ console.log(`This user has ${myJsonDatabase()["userID"].coins} coins.`);
 #### Example 6
 
 ```js
-const ezyjson = require("ezyjson");
-const myJsonDatabase = ezyjson(`${__dirname}/myDatabase.json`);
+const ezyjson = require("@xevaltan/ezyjson");
+const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // get value of a key
 
@@ -100,8 +100,8 @@ console.log(`Debug : ${myJsonDatabase().key}`);
 #### Example 7
 
 ```js
-const ezyjson = require("ezyjson");
-const myJsonDatabase = ezyjson(`${__dirname}/myDatabase.json`);
+const ezyjson = require("@xevaltan/ezyjson");
+const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
 
 // get value of a key
 
