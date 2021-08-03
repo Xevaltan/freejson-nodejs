@@ -1,0 +1,21 @@
+{
+  "name": "ezyjson",
+  "version": "2.3.4",
+  "description": "new nodejs filesystem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "filesystem",
+    "fs",
+    "file",
+    "files"
+  ],
+  "author": "Xevaltan",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {}
+}
