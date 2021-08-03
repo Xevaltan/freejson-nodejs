@@ -3,7 +3,7 @@
 ### Install
 
 ```bash
-npm i --save ezyjson
+npm i --save @xevaltan/freejson
 ```
 
 ### Import
