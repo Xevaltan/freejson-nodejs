@@ -28,7 +28,7 @@ myDb()["userID"] = {
 };
 
 // then save (necessary).
-myJsonDatabase.save();
+myDb.save();
 
 // Get key
 console.log(mydb().key1.key2);
