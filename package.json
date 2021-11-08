@@ -1,6 +1,6 @@
 {
   "name": "@xevaltan/freejson",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "new nodejs filesystem",
   "main": "index.js",
   "keywords": [
@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/Xevaltan/ezyjson-nodejs/issues"
   },
-  "homepage": "https://github.com/Xevaltan/ezyjson-nodejs#readme"
+  "homepage": "https://github.com/Xevaltan/ezyjson-nodejs#readme",
+  "types": "./index.d.ts"
 }
