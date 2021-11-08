@@ -1,56 +1,26 @@
-# FREEJSON - NEW NODEJS FILESYSTEM
+# FREEJSON - NEW NODEJS JSON FILESYSTEM
 
-### Install
+## Install
 
 ```bash
 npm i --save @xevaltan/freejson
 ```
 
-### Import
+## Import
 
 ```js
 const freejson = require("@xevaltan/freejson");
 ```
 
-### Testing
-
-#### Example 1
+## Start
 
 ```js
 const freejson = require("@xevaltan/freejson");
-const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
+const myDb = freejson(`${__dirname}/myDatabase.json`);
 
 // add a key with the value.
 
-myJsonDatabase().key = value;
-
-// then save (necessary).
-myJsonDatabase.save();
-```
-
-#### Example 2
-
-```js
-const ezyjson = require("@xevaltan/freejson");
-const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
-
-// add a key with the value.
-
-myJsonDatabase().key1.key2inKey1 = value;
-
-// then save (necessary).
-myJsonDatabase.save();
-```
-
-#### Example 3
-
-```js
-const ezyjson = require("@xevaltan/freejson");
-const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
-
-// add a key with the value.
-
-myJsonDatabase()["userID"] = {
+myDb()["userID"] = {
   coins: 563,
   xp: 561,
   lvl: 3,
@@ -59,59 +29,15 @@ myJsonDatabase()["userID"] = {
 
 // then save (necessary).
 myJsonDatabase.save();
+
+// Get key
+console.log(mydb().key1.key2);
 ```
 
-#### Example 4
+## Why should I use this plugin?
 
-```js
-const ezyjson = require("@xevaltan/freejson");
-const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
+You should use this plugin if you need a fast json file manager
 
-// add a key with the value.
-
-myJsonDatabase()["userID"].coins += 500;
-
-// then save (necessary).
-myJsonDatabase.save();
-```
-
-#### Example 5
-
-```js
-const ezyjson = require("@xevaltan/freejson");
-const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
-
-// get value of a key
-
-console.log(`This user has ${myJsonDatabase()["userID"].coins} coins.`);
-```
-
-#### Example 6
-
-```js
-const ezyjson = require("@xevaltan/freejson");
-const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
-
-// get value of a key
-
-console.log(`Debug : ${myJsonDatabase().key}`);
-```
-
-#### Example 7
-
-```js
-const ezyjson = require("@xevaltan/freejson");
-const myJsonDatabase = freejson(`${__dirname}/myDatabase.json`);
-
-// get value of a key
-
-console.log(`Debug : ${myJsonDatabase().key1.key2inKey1}`);
-```
-
-### Where is this plugin used?
-
-This nodejs plugin is used for projects that needs json databases.
-
-### Creator:
+## Creator:
 
 - Xevaltan

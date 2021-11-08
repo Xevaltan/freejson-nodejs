@@ -1,6 +1,6 @@
 {
   "name": "@xevaltan/freejson",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "new nodejs filesystem",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Xevaltan/ezyjson-nodejs/issues"
   },
-  "homepage": "https://github.com/Xevaltan/ezyjson-nodejs#readme"
+  "homepage": "https://github.com/Xevaltan/ezyjson-nodejs#readme",
+  "dependencies": {
+    "browserify-fs": "^1.0.0"
+  }
 }
