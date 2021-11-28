@@ -27,8 +27,7 @@ myDb()["userID"] = {
   linkedMCaccount: "Qwerty123",
 };
 
-// then save (necessary).
-myDb.save();
+// YOU DON'T HAVE TO SAVE MANUALLY, IT SAVES AUTOMATICALLY, YESSS!!.
 
 // Get key
 console.log(mydb().key1.key2);

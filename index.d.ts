@@ -1,18 +1,8 @@
 declare function _exports(filePath: string): {
-    (txt: boolean): typeof Object | string;
-    save(): void;
-    /**
-     * @private
-     */
-    db: any;
-    /**
-     * @private
-     */
-    filePath: string;
-    /**
-     *
-     * @param {string} text
-     */
-    text(text: string): void;
+  (): any;
+  db: any;
+  filePath: string;
+  save(): void;
 };
+
 export = _exports;

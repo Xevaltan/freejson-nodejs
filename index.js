@@ -7,38 +7,20 @@ let fs = require("fs");
  */
 module.exports = (filePath) => {
   let db = require(filePath);
-
-  /**
-   *
-   * @param {boolean} txt
-   * @returns {typeof Object | string}
-   *
-   */
-  let func = (txt) => {
-    if (txt) return fs.readFileSync(filePath, { encoding: "utf-8" });
-    if (!txt) return db;
+  let func = () => {
+    return db;
   };
 
+  func.db = db;
+  func.filePath = filePath;
   func.save = () => {
     fs.writeFileSync(func.filePath, JSON.stringify(func.db));
   };
 
-  /**
-   * @private
-   */
-  func.db = db;
-  /**
-   * @private
-   */
-  func.filePath = filePath;
-
-  /**
-   *
-   * @param {string} text
-   */
-  func.text = (text) => {
-    writeFileSync(func.filePath, text);
-  };
+  let checker = setInterval(() => {
+    if (func.db === require(func.filePath)) clearInterval(checker);
+    func.save();
+  }, 0);
 
   return func;
 };
